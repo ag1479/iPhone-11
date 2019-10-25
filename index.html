@@ -14,7 +14,40 @@
         margin: 0;
       }
 
-      @media screen and (max-width: 600px) {
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 100% !important;
+        }
+        .responsive-image {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+        .adjust-padding {
+          padding-bottom: 5px !important;
+        }
+
+        @media only screen and (max-width: 414px) {
+          .container {
+            width: 100% !important;
+          }
+          .left-column {
+            width: 100% !important;
+          }
+          .middle-column {
+            width: 100% !important;
+          }
+          .right-column {
+            width: 100% !important;
+          }
+        }
+        @media only screen and (max-width: 320px) {
+          .container {
+            width: 100% !important;
+          }
+        }
+      }
+
+      /* @media only screen and (max-width: 600px) {
         table[class="container"] {
           width: 100% !important;
         }
@@ -26,7 +59,7 @@
           padding-bottom: 5px !important;
         }
 
-        @media screen and (max-width: 414px) {
+        @media only screen and (max-width: 414px) {
           table[class="container"] {
             width: 100% !important;
           }
@@ -40,12 +73,12 @@
             width: 100% !important;
           }
         }
-        @media screen and (max-width: 320px) {
+        @media only screen and (max-width: 320px) {
           table[class="container"] {
             width: 100% !important;
           }
         }
-      }
+      } */
     </style>
   </head>
   <body>
@@ -159,8 +192,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="less-padding">
+                        <td class="adjust-padding">
                           <ul
+                            class="unordered-list"
                             style="Margin:0; padding: 0 0 24px 15px; font-weight: 600; font-family: 'Open Sans','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; font-size: 14px;"
                           >
                             <li
